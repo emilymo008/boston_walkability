@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+
+<html>
+    
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300" rel="stylesheet">
+    <script src="processing.min.js"></script> <!-- chrome doesnt like local files so it only loads in firefox -->
+    <style>
+        h1 {text-align:center;} 
+        p {text-align:center;}
+        div.relative {
+            position: relative;
+            left: 100px;}
+        div.absolute {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            width: 200px;
+            height: 100px;}
+        body {
+            font-family: 'Rubik', sans-serif;
+        }
+    </style>
+    <title>i like walkin</title>
+</head>
+
+
+<body>
+    <h1>Walkability and Community Resources in Boston</h1>
+    <p>whatatatghotlk attatlskj</p>
+    <br>
+    <br>
+    
+    <div class="wrapper" style="margin: 0 auto; width: 1024px; position: relative;">
+        <canvas width="300" height="300" data-processing-sources="circle.pde"></canvas>
+        <div class = 'absolute'>hey look it looks like it's working wow im sooooo smurt blah blab blabh ablh blah what if I keep going la la la la al alala la a</div>
+        
+    <div/>
+    
+    <div class="wrapper" style="margin: 0 auto; width: 1024px; position: relative;">
+        <canvas width="300" height="300" data-processing-sources="circle.pde"></canvas>
+        <div class = 'absolute'>second paragraph uh oh hopefully this works </div>
+        
+    <div/>
+    
+    <!-- but what if I want to arrange them horizontally with text on the bottom...-->
+    <div class="wrapper" style="margin: 0 auto; float: left; width: 300px; height:600px; position: relative;">
+        <canvas width="300" height="300" data-processing-sources="circle.pde"></canvas>
+        <div style = "position: absolute; bottom: 0;">this is the redesign</div>
+        
+    <div/>
+    
+    <!-- this looks ok but it doesn't use percentages which is a problem-->
+    <div class="wrapper" style="margin: 0 auto; float: left; width: 300px; height:400px; position: relative;">
+        <canvas width="300" height="300" data-processing-sources="circle.pde"></canvas>
+        <div style = "position: absolute; left: 10%; right: 10%; bottom: 0;">this is the redesign...llal alagrdl alal ala alalal fdifa  jdfael jdl ajfd dj oeghd grdfgao</div>
+        
+    <div/>
+    
+<!-- --------------------------------------------------------- this didn't work the way I wanted, tried something else. the first div works fine. -->
+
+    in head, had to set: canvas {
+            padding: 0;
+            margin: auto;
+            display: block;
+            position: absolute;
+            left: 0;
+            right: 0;}
+
+    <div class="wrapper" style="margin: 0 auto; float: left; width: 33%; height:400px; position: relative;">
+        <canvas data-processing-sources="circle.pde"></canvas>
+        <div style = "position: absolute; left: 10%; right: 10%; bottom: 0;">this is the redesign...llal alagrdl alal ala alalal fdifa  jdfael jdl ajfd dj oeghd grdfgao</div> 
+    <div/>
+    
+     <div class="wrapper" style="margin: 0 auto; float: right; width: 33%; height:400px; position: relative;">
+        <canvas data-processing-sources="circle.pde"></canvas>
+        <div style = "position: absolute; left: 10%; right: 10%; bottom: 0;">this is the redesign...llal alagrdl alal ala alalal fdifa  jdfael jdl ajfd dj oeghd grdfgao</div> 
+    <div/>
+    
+</body>
+
+
+<!-- --------------------------------------------------------- this actually works but I'm trying something else to make the text align better -->
+ <div class="wrapper" style="float: left; width: 100%; height:450px; position: relative;">
+        
+        <div style = "position: absolute; width: 33%; height: 450px; float: left; bottom: 0;">
+            <canvas style = "position: absolute; width: 33%;" data-processing-sources="circle.pde"></canvas>
+                    <div style = "position: absolute; left: 10%; right: 10%; bottom: 0;"> 90% of Boston is within 1 mile of a public park, playground, or athletic field.</div> 
+
+        </div>
+        
+        <div style = "position: relative; width: 33%; height: 450px; float: right; bottom: 0;">
+            <canvas style = "position: absolute; width: 33%;" data-processing-sources="circle.pde"></canvas>
+                    <div style = "position: absolute; left: 10%; right: 10%; bottom: 0;">adhf giaf ga sh ak gaoh afj aohwgashag oo fj </div> 
+
+        </div>
+        
+        <div style = "position: relative; width: 33%; height: 450px; margin: auto; bottom: 0;">
+            <canvas style = "position: absolute; width: 33%;" data-processing-sources="circle.pde"></canvas>
+                    <div style = "position: absolute; left: 10%; right: 10%; bottom: 0;">49% of Boston is within 1 mile of a public library.</div> 
+
+        </div> 
+        
+    </div>

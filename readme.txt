@@ -1,0 +1,5 @@
+For the proportions of Boston's area located within 1 mile of parks and libraries, I used the City of Boston boundary from the Analyze Boston platform and took 100 stratified samples of size 200, and counted the proportion of points that were within 1 mile of parks/libraries to obtain an accurate estimate of these parameters of the entire area of Boston. The data for parks and libraries come from the Open Spaces and BPL Branches datasets on Analyze Boston, though I had to geocode the coordinates for the open spaces through a loop and fill in missing or wrong coordinates manually.
+
+Boston Public School coordinates, play space information, and media center ratings come from the BuildBPS dataset from Analyze Boston. The BuildBPS evaluations took place in 2016 and therefore may not necessarily reflect conditions today. 
+
+"Radius" graphics were made in Processing.
